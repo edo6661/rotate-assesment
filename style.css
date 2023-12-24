@@ -30,6 +30,11 @@ body {
 	border-top-color: var(--red-bg);
 	border-left-color: var(--blue-bg);
 	border-bottom-color: var(--yellow-bg);
+	animation: rotateReverse linear 0.5s 3 reverse;
+}
+
+.container:hover {
+	animation: rotate linear 0.5s 3 forwards;
 }
 
 @keyframes rotate {

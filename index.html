@@ -11,23 +11,6 @@
 			rel="stylesheet"
 			href="style.css"
 		/>
-		<!-- using javascript for preventing rotate when page loaded or content loaded -->
-		<script defer>
-			document.addEventListener('DOMContentLoaded', function () {
-				const baseAnimate = 'linear 0.5s 3';
-
-				const container = document.querySelector('.container');
-
-				const startRotate = () =>
-					(container.style.animation = `rotate ${baseAnimate} forwards`);
-
-				const startRotateReverse = () =>
-					(container.style.animation = `rotateReverse ${baseAnimate} reverse`);
-
-				container.addEventListener('mouseover', startRotate);
-				container.addEventListener('mouseout', startRotateReverse);
-			});
-		</script>
 	</head>
 	<body>
 		<div class="container" />
