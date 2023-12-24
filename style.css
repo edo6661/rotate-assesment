@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+	--green-bg: green;
+	--red-bg: red;
+	--blue-bg: blue;
+	--yellow-bg: yellow;
+}
+
+html {
+	color-scheme: dark light;
+}
+body {
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+}
+
+.container {
+	width: 32rem;
+	height: 32rem;
+	border-radius: 100%;
+	border: 6rem solid;
+	border-right-color: var(--green-bg);
+	border-top-color: var(--red-bg);
+	border-left-color: var(--blue-bg);
+	border-bottom-color: var(--yellow-bg);
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotateReverse {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
